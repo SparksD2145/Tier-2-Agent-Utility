@@ -1,7 +1,7 @@
 @ECHO OFF
 SETLOCAL
 MODE CON: COLS=43 LINES=68
-TITLE "Tier 2 Agent Control Center [v1.0.1]"
+TITLE Tier 2 Agent Control Center [v1.0.1]
 ::: -- DEVELOPER, ORIGINAL AUTHOR - NATHAN SMYTH --
 ::: -- DEVELOPER, MODULAR DEVELOPMENT AND REDEPLOY - THOMAS IBARRA --
 :start
@@ -106,7 +106,14 @@ IF DEFINED %1% {
 	IF /I "%1%" == "s5" SET _requestedcmd="launchubbt"
 	IF /I "%1%" == "s6" SET _requestedcmd="launchusdott"
 	SET _filehandle="%~dp0\command_index\%_requestedcmd%.bat"
-	IF EXIST %_filehandle% CLS & CALL %_filehandle% ELSE CLS & ECHO Unfortunately that command is invalid. & PAUSE
+	IF EXIST %_filehandle% {
+		CLS 
+		CALL %_filehandle%
+	} ELSE {
+		CLS
+		ECHO Unfortunately, that command is invalid.
+		PAUSE
+	}
 	GOTO :eof
 } ELSE {
 	CLS
