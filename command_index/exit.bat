@@ -1,16 +1,7 @@
-:::: DEV NOTE: This file/command will require cleanup; Functionality disabled for now until I get to it.
-EXIT
-::---- END DISABLED ------
+GOTO close
+:close
 CLS
-SET /p verify=Are you sure (command:exit)? (y/n)
-IF "%verify%"=="y" GOTO exit_yes
-IF "%verify%"=="Y" GOTO exit_yes
-IF "%verify%"=="n" GOTO exit_no
-IF "%verify%"=="N" GOTO exit_no
-pause
-:exit_yes
-exit
-:exit_no
-CLS
-ECHO Okay...I won't close! :)
-pause
+SET /p verify="Are you sure you'd like to close T2ACC? [y/n]: "
+IF /I "%verify%"=="y" EXIT
+IF /I "%verify%"=="n" CLS & ECHO "I understand, you declined exiting T2ACC." & PAUSE
+ELSE ECHO "I do not understand your input, please try again." & PAUSE & GOTO close

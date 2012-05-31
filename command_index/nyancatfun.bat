@@ -1,5 +1,5 @@
 :::: DEV NOTE: This file/command will require massive cleanup; Functionality disabled for now until I get to it.
-EXIT
+GOTO :eof
 ::---- END DISABLED ------
 CLS
 ECHO By going to this website, you agree that

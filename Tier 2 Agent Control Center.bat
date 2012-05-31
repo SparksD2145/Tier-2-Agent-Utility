@@ -94,7 +94,7 @@ IF DEFINED %1% {
 	IF /I "%1%" == "17" SET _requestedcmd="shutdown"
 	IF /I "%1%" == "18" SET _requestedcmd="smartchat"
 	IF /I "%1%" == "19" SET _requestedcmd="spp"
-	IF /I "%1%" == "10" SET _requestedcmd="startcalc"
+	IF /I "%1%" == "20" SET _requestedcmd="startcalc"
 	IF /I "%1%" == "21" SET _requestedcmd="startcrm"
 	IF /I "%1%" == "22" SET _requestedcmd="startcontacthelpdotcom"
 	IF /I "%1%" == "23" SET _requestedcmd="starteightball"

@@ -1,5 +1,5 @@
 :::: DEV NOTE: This file/command will require cleanup; Functionality disabled for now until I get to it.
-EXIT
+GOTO: eof
 ::---- END DISABLED ------
 CLS
 SET /p verify=Are you sure (command:shutdown)? (y/n)
