@@ -105,7 +105,7 @@ IF DEFINED %1% {
 	IF /I "%1%" == "s4" SET _requestedcmd="launchscanr"
 	IF /I "%1%" == "s5" SET _requestedcmd="launchubbt"
 	IF /I "%1%" == "s6" SET _requestedcmd="launchusdott"
-	IF DEFINED %_requestedcmd& SET _filehandle="%~dp0\command_index\%_requestedcmd%.bat"
+	SET _filehandle="%~dp0\command_index\%_requestedcmd%.bat"
 	IF EXIST %_filehandle% (
 		CLS 
 		CALL %_filehandle%
