@@ -105,15 +105,15 @@ IF DEFINED %1% {
 	IF /I "%1%" == "s4" SET _requestedcmd="launchscanr"
 	IF /I "%1%" == "s5" SET _requestedcmd="launchubbt"
 	IF /I "%1%" == "s6" SET _requestedcmd="launchusdott"
-	SET _filehandle="%~dp0\command_index\%_requestedcmd%.bat"
-	IF EXIST %_filehandle% {
+	IF DEFINED %_requestedcmd& SET _filehandle="%~dp0\command_index\%_requestedcmd%.bat"
+	IF EXIST %_filehandle% (
 		CLS 
 		CALL %_filehandle%
-	} ELSE {
+	) ELSE (
 		CLS
 		ECHO Unfortunately, that command is invalid.
 		PAUSE
-	}
+	)
 	GOTO :eof
 } ELSE {
 	CLS

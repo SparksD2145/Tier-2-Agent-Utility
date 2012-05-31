@@ -1,1 +1,2 @@
-calc
+START calc
+GOTO :eof
