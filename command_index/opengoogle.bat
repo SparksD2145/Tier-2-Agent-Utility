@@ -1,4 +1,7 @@
 :::: DEV NOTE: This file/command will require cleanup; Functionality disabled for now until I get to it.
+CLS
+ECHO I'm sorry, a developer has disabled this command for corrections.
+PAUSE
 GOTO :eof
 ::---- END DISABLED ------
 CLS
