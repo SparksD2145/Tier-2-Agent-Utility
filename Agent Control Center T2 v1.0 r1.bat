@@ -1,27 +1,12 @@
-::: -- AGENT CONTROL CENTER T2
-::: -- CODER COMMENTS --
-::: -- UPDATES --
-::: -- END UPDATES --
-::: -- REVISIONS --
-:::    r1 :
-:::    
-::: -- END REVISIONS --
-::: -- URLS --
-::: -- http://www.dostips.com/DtCodeSnippets.php for help on codes
-::: -- END URLS --
-::: -- CREATION INFO --
-::: -- LAST UPDATED ON APR 3, 2012 --
-::: -- WRITTEN BY NATHAN SMYTH --
-::: -- END CREATION INFO --
-::: -- END CODER COMMENTS --
 @ECHO OFF
-TITLE The Agent Control Center T2 v1.0 r1
-::: -- Set the window size --
 MODE CON: COLS=43 LINES=68
+TITLE The Agent Control Center T2 v1.0 r1
+::: -- PRIMARY DEV - NATHAN SMYTH --
+::: -- SECONDARY DEV - THOMAS IBARRA --
 :start
 CLS
 ECHO/
-ECHO  Hello %USERNAME%!
+ECHO  Hello, %USERNAME%!
 ECHO/
 ECHO  ------------- HOW TO USE ----------------
 ECHO/
@@ -33,19 +18,14 @@ ECHO  properly if you are not on their network.
 ECHO  If you want to do something, use the 
 ECHO  corresponding # next to the command.
 ECHO/
-ECHO   The following script is to be used by a
-ECHO   T2 Agents only.
+ECHO  The following script is to be used by
+ECHO  T2 Agents only.
 ECHO/
 ECHO  1 equals can use it on/off network
 ECHO  0 equals can only be used on network
 ECHO  S equals a sat command
 ECHO/
-ECHO      Changelog has been updated as of
-ECHO                  4/3/12
-ECHO      Please see this file in notepad++
-ECHO            for more information
-ECHO/
-ECHO      COPYRIGHT c 2011-2012 DO NOT COPY
+ECHO  COPYRIGHT c 2011-2012 DO NOT REDISTRIBUTE
 ECHO/
 ECHO  ---------- LIST OF COMMANDS -------------
 ECHO/
@@ -119,17 +99,14 @@ IF "%ask%"=="s4" GOTO launchscanr
 IF "%ask%"=="s5" GOTO launchubbt
 IF "%ask%"=="s6" GOTO launchusdott
 ELSE GOTO wrongcode
-::-----inside commands---------------------------
 ::-----------------------------------------------
 :wrongcode
 CLS
-ECHO You have entered an invalid code
+ECHO You have entered an invalid code.
 pause
 CLS
 GOTO start
 ::-----------------------------------------------
-::-----end inside commands-----------------------
-
 ::--START COMMAND CODING HERE--------------------
 ::--SUDO COMMAND---------------------------------
 :LAUNCHALL
