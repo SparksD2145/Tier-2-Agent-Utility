@@ -1,0 +1,11 @@
+=============
+= CHANGELOG =
+=============
+
+Tier 2 Agent Command Center 1.0.0 R1 [commit withheld for repo initialize]
+    - Initial development conclusion, project enters collaborative development
+    - Project revisioning process enters Git model
+    - Version format updated for revisioning model compatibility (eg. X.x.y:commit)
+    - Primary changelog adopted; dev changes now managed by git model
+    - Release history now managed by git model, releases governed by GIT-TAG model
+    - Git model initialized
