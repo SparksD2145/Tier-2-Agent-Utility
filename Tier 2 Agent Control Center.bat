@@ -47,7 +47,7 @@ ECHO  13. OPEN MYCSP (1)
 ECHO  14. RUN AGENT HOMEPAGE (1)
 ECHO  15. RUN IE (1)
 ECHO  16. SCORECARD (NOT PERSONAL)(1)
-ECHO  17. SHUTDOWN COMPUTER (1)(S)
+ECHO  17. RESTART COMPUTER (1)(S)
 ECHO  18. SMARTCHAT (0)
 ECHO  19. SPP (0)
 ECHO  20. START CALCULATOR (1)
@@ -91,7 +91,7 @@ IF DEFINED %1% {
 	IF /I "%1%" == "14" SET _requestedcmd="runah"
 	IF /I "%1%" == "15" SET _requestedcmd="runie"
 	IF /I "%1%" == "16" SET _requestedcmd="scorecard"
-	IF /I "%1%" == "17" SET _requestedcmd="shutdown"
+	IF /I "%1%" == "17" SET _requestedcmd="restart"
 	IF /I "%1%" == "18" SET _requestedcmd="smartchat"
 	IF /I "%1%" == "19" SET _requestedcmd="spp"
 	IF /I "%1%" == "20" SET _requestedcmd="startcalc"
