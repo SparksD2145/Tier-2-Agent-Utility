@@ -1,6 +1,4 @@
-CLS
-ECHO Launching all your tools!
-ECHO/
+ECHO Launching all of your tools.
 ECHO Launching Agent Homepage!
 set website=http://phxrptiapp01/agenthome/index.php
 start "C:\Program Files\Internet Explorer\iexplore.exe" "%website%"

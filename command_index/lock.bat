@@ -1,4 +1,3 @@
-CLS
 GOTO lock
 :lock
 SET /p verify="Are you sure? [y/n]: "

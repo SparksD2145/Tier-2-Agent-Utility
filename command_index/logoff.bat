@@ -1,4 +1,3 @@
-CLS
 GOTO logout
 :logout
 SET /p verify="Are you sure you'd like to log out? [y/n]: "

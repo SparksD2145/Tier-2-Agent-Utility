@@ -1,1 +1,1 @@
-"C:\WINDOWS\system32\calc.exe"
+calc
