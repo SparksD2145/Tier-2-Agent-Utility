@@ -15,8 +15,12 @@ SET /p verify="Restart Computer? [y/n]: "
 IF "%verify%"=="y" (
 	CLS
 	SHUTDOWN /r /t 15 /d p:0:0 /c "User Initiated Shutdown."
-	ECHO Your workstation will restart in 15 seconds.
-	ECHO You may cancel the restart by pressing any key.
+	ECHO Your workstation will
+	ECHO restart in 15 seconds.
+	ECHO/
+	ECHO You may cancel the 
+	ECHO restart by pressing
+	ECHO any key.
 	ECHO/
 	PAUSE
 	SHUTDOWN /a
