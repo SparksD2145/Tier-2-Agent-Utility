@@ -8,6 +8,7 @@ TITLE T2ACC [DEV_SPARKS] [v1.1.0a-a140954]
 ::
 SET _progdir=%~d0%~p0
 SET _cmdstorage=%_progdir%command_index
+SET _f="1"
 GOTO start
 ::
 ::
@@ -29,9 +30,6 @@ ECHO/
 ECHO  The following script is to be used by
 ECHO  T2 Agents only.
 ECHO/
-ECHO  1 equals can use it on/off network
-ECHO  0 equals can only be used on network
-ECHO  S equals a sat command
 ECHO/
 ECHO  COPYRIGHT c 2011-2012 DO NOT REDISTRIBUTE
 ECHO/
@@ -48,9 +46,11 @@ GOTO start
 SETLOCAL
 PUSHD "%_cmdstorage%"
 ECHO  :: Main Commands ::
-FOR %%G IN (*.bat) DO PAUSE CALL :bat_handler 0 "%%G"
-ECHO/
+FOR %%G IN (*.bat) DO (
+    CALL :bat_handler 0 "%%G"
+)
 FOR /d %%G IN (*) DO (
+    ECHO/
     ECHO  :: %%G ::
     PUSHD %%G
     FOR %%F IN (*.bat) DO (
@@ -61,7 +61,6 @@ FOR /d %%G IN (*) DO (
 POPD
 ENDLOCAL & GOTO :eof
 :bat_handler
-SETLOCA
 IF [%1]==[] (
     CLS
     ECHO Handler Exception:
@@ -76,15 +75,23 @@ IF [%1]==[] (
         ECHO/
         PAUSE
     ) ELSE (
-        IF EXIST %2 (
-            CLS
-            IF %1 == 0 ECHO %~n2
-            IF %1 == 1 CALL %2
-        ) ELSE (
-            CLS
-            ECHO Unfortunately, that command is invalid.
-            PAUSE
+        IF %1==0 ECHO  %~n2
+        IF %1==1 (
+            FOR /r %%I IN (%2.bat) DO (
+                CALL "%%I"
+                CALL :resetf "0"
+            )
+            IF %_f%=="1" (
+                CLS
+                ECHO Unfortunately, that command is invalid.
+                PAUSE
+            )
+            CALL :resetf "0"
         )
     )
 )
-ENDLOCAL & GOTO :eof
+GOTO :eof
+:resetf
+IF %1=="1" SET _f="1"
+IF %1=="0" SET _f=""
+GOTO :eof
