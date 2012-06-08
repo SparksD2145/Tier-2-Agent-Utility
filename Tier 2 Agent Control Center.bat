@@ -1,14 +1,15 @@
 @ECHO OFF
 SETLOCAL
-MODE CON: COLS=43 LINES=68
+MODE CON: COLS=43 LINES=70
 :::TITLE Tier 2 Agent Control Center [v1.0.1]
-TITLE T2ACC [DEV_SPARKS] [v1.1.0a-a140954]
+TITLE T2ACC [DEV_SPARKS] [v1.2.0a-f3e6f679d2]
 ::: -- DEVELOPER, ORIGINAL AUTHOR - NATHAN SMYTH --
 ::: -- DEVELOPER, MODULAR DEVELOPMENT AND REDEPLOY - THOMAS IBARRA --
 ::
 SET _progdir=%~d0%~p0
 SET _cmdstorage=%_progdir%command_index
-SET _f="1"
+SET _count=1
+SET _pnumber=-1
 GOTO start
 ::
 ::
@@ -24,8 +25,6 @@ ECHO  must be on the Volt/Pace/2WIRE network
 ECHO  and you must be an agent working for
 ECHO  them. Some functions may not work
 ECHO  properly if you are not on their network.
-ECHO  If you want to do something, use the 
-ECHO  corresponding # next to the command.
 ECHO/
 ECHO  The following script is to be used by
 ECHO  T2 Agents only.
@@ -47,7 +46,7 @@ SETLOCAL
 PUSHD "%_cmdstorage%"
 ECHO  :: Main Commands ::
 FOR %%G IN (*.bat) DO (
-    CALL :bat_handler 0 "%%G"
+   CALL :bat_handler 0 "%%G"
 )
 FOR /d %%G IN (*) DO (
     ECHO/
@@ -56,13 +55,13 @@ FOR /d %%G IN (*) DO (
     FOR %%F IN (*.bat) DO (
         CALL :bat_handler 0 "%%F"
     )
-    POPD
+    POPD 
 )
 POPD
-ENDLOCAL & GOTO :eof
+ENDLOCAL & SET (_count=1) & GOTO :eof
 :bat_handler
 IF [%1]==[] (
-    CLS
+    CLS1
     ECHO Handler Exception:
     ECHO No flag specified.
     ECHO/
@@ -75,23 +74,21 @@ IF [%1]==[] (
         ECHO/
         PAUSE
     ) ELSE (
-        IF %1==0 ECHO  %~n2
+        IF %1==0 (
+            SET /A _count+=1
+            ECHO   %_count%.	%~n2
+        )
         IF %1==1 (
-            FOR /r %%I IN (%2.bat) DO (
-                CALL "%%I"
-                CALL :resetf "0"
+            FOR /r %%P IN (*.bat) DO (
+                CALL :determine_program "%2" "%%P"
+                IF /I "%%~nP" EQU "%2" ( CALL "%%P" )
             )
-            IF %_f%=="1" (
-                CLS
-                ECHO Unfortunately, that command is invalid.
-                PAUSE
-            )
-            CALL :resetf "0"
         )
     )
 )
+SET _pnumber=-1
 GOTO :eof
-:resetf
-IF %1=="1" SET _f="1"
-IF %1=="0" SET _f=""
-GOTO :eof
+:determine_program
+CALL SET /A _pnumber+=1
+IF "%_pnumber%" EQU %1 CALL %2
+goto :eof
