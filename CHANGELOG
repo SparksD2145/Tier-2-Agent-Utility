@@ -9,3 +9,7 @@ Tier 2 Agent Command Center 1.0.0 R1 [commit withheld for repo initialize]
     - Primary changelog adopted; dev changes now managed by git model
     - Release history now managed by git model, releases governed by GIT-TAG model
     - Git model initialized
+    
+Tier 2 Agent Utility 2.0.0 [Sparks] [Overhaul by Thomas]
+    - Brand new and usable
+    - Huzzah!

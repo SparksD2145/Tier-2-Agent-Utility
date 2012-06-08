@@ -1,0 +1,1 @@
+start /B "C:\Program Files\Internet Explorer\iexplore.exe" "http://startup.q.att.com/startup/webstart/q.jnlp"

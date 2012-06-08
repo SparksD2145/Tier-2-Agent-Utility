@@ -1,11 +1,9 @@
 @ECHO OFF
 SETLOCAL
-MODE CON: COLS=43 LINES=70
-:::TITLE Tier 2 Agent Control Center [v1.0.1]
-TITLE T2ACC [DEV_SPARKS] [v1.2.0a-f3e6f679d2]
+MODE CON: COLS=43 LINES=75
+TITLE Tier 2 Agent Utility [v2.0.0]
 ::: -- DEVELOPER, ORIGINAL AUTHOR - NATHAN SMYTH --
 ::: -- DEVELOPER, MODULAR DEVELOPMENT AND REDEPLOY - THOMAS IBARRA --
-::
 SET _progdir=%~d0%~p0
 SET _cmdstorage=%_progdir%command_index
 SET _count=1
@@ -18,19 +16,12 @@ CLS
 ECHO/
 ECHO  Hello, %USERNAME%!
 ECHO/
-ECHO  ------------- HOW TO USE ----------------
+ECHO/ 
+ECHO  --------- Teir 2 Agent Utility ----------
 ECHO/
-ECHO  In order to use this batch file, you
-ECHO  must be on the Volt/Pace/2WIRE network
-ECHO  and you must be an agent working for
-ECHO  them. Some functions may not work
-ECHO  properly if you are not on their network.
-ECHO/
-ECHO  The following script is to be used by
-ECHO  T2 Agents only.
-ECHO/
-ECHO/
-ECHO  COPYRIGHT c 2011-2012 DO NOT REDISTRIBUTE
+ECHO   - Originally coded by Nathan Smyth
+ECHO   - Overhauled and made usable by Thomas
+ECHO   - You're welcome.
 ECHO/
 ECHO  ----------- COMMAND LISTING -------------
 ECHO/
@@ -38,7 +29,8 @@ CALL :list_cmds
 ECHO/
 ECHO  -----------------------------------------
 ECHO/
-SET /p ask= Input command: 
+SET /p _ask= Input command: 
+SET ask=%_ask:!=%
 CALL :bat_handler 1 %ask%
 GOTO start
 :list_cmds
