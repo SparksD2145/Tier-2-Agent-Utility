@@ -1,7 +1,7 @@
 @ECHO OFF
 SETLOCAL
 MODE CON: COLS=43 LINES=75
-TITLE Tier 2 Agent Utility [v2.0.0]
+TITLE Tier 2 Agent Utility [v2.0.1]
 ::: -- DEVELOPER, ORIGINAL AUTHOR - NATHAN SMYTH --
 ::: -- DEVELOPER, MODULAR DEVELOPMENT AND REDEPLOY - THOMAS IBARRA --
 SET _progdir=%~d0%~p0
@@ -20,8 +20,7 @@ ECHO/
 ECHO  --------- Teir 2 Agent Utility ----------
 ECHO/
 ECHO   - Originally coded by Nathan Smyth
-ECHO   - Overhauled and made usable by Thomas
-ECHO   - You're welcome.
+ECHO   - Overhauled and refined by Thomas
 ECHO/
 ECHO  ----------- COMMAND LISTING -------------
 ECHO/
