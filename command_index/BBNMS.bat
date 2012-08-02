@@ -1,2 +1,2 @@
 set website=http://bbnms-ls.it.att.com/lswebclient/home/swf/home.jsp#
-start "C:\Program Files\Internet Explorer\iexplore.exe" "%website%"
+start "E:\PortableApps\GoogleChromePortable\GoogleChromePortable.exe" "%website%"
