@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://uma.att.com/uma/RetrieveChannelLineup?ZIP=60644&packgeList_select=SHUNLD&channelList_select=&APPID=CRM&actionType=GETCHANNELSBYPACKAGE&FORMAT=IFRAME"
