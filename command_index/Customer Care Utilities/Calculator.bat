@@ -1,2 +1,0 @@
-START calc
-GOTO :eof

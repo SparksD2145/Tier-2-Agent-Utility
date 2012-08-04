@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://scanr-g.it.att.com/"
