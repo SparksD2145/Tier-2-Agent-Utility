@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://spp.web.att.com/spp/ui/"

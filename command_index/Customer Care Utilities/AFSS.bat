@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://agentsupport.web.att.com/tier1/dsl/toolslist/index.shtml"

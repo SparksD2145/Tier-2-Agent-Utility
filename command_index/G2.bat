@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://g2.sbcglobal.net"

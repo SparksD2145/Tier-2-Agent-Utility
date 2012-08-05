@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://bbnms-ls.it.att.com/lswebclient/home/swf/home.jsp"

@@ -1,1 +1,0 @@
-CALL %openbrowser% "https://uvpcsr.web.att.com/uvp/myhome/resolvemember?dest=MMPWD"

@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://uvsewebsvr1c.rcsntx.sbcglobal.net/oopscv/"

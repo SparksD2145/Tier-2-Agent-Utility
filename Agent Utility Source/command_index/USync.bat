@@ -1,1 +1,0 @@
-CALL %openbrowser% "https://unisynctool.sbcis.sbc.com/USTWeb/compare.do"

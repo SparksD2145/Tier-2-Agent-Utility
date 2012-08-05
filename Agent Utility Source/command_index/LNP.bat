@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://clph055.sldc.sbc.com/lnp/"

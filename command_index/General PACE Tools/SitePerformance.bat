@@ -1,0 +1,1 @@
+CALL %openbrowser% "http://phxrptiapp01/uvportal/main.php?p=scorecard"

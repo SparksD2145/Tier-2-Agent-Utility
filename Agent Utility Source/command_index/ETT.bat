@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://uvsemtools1c.rcsntx.sbcglobal.net/oma/ett/"

@@ -1,1 +1,0 @@
-start "IE_FOR_INCOMPATIBLE_PROCESSES" "C:\Program Files\Internet Explorer\iexplore.exe" "http://startup.q.att.com/startup/webstart/q.jnlp"
