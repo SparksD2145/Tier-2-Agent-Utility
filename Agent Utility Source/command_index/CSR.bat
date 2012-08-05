@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://csr-myaccount.cingular.net/tbmcsr/login.do"

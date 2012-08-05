@@ -1,1 +1,0 @@
-CALL %openbrowser% "https://lsreg.att.net"

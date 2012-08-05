@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://www.att.com/equipment"

@@ -1,1 +1,0 @@
-CALL %openbrowser% "https://smartchat-sfdc.web.att.com/SMARTChatHome/home"

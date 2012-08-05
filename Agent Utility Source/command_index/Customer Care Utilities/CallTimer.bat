@@ -1,1 +1,0 @@
-CALL %openbrowser% "\\satstorage01\teams_shared\Team Lynch\ACallTimer.exe"

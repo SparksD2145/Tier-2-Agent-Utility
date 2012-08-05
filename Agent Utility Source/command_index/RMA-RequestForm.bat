@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://nopct.lno.att.com/oss/feedback3.cfm"

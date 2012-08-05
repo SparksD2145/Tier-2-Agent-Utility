@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://mycsp.cingular.net"

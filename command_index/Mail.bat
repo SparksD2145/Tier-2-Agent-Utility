@@ -1,0 +1,1 @@
+CALL %openbrowser% "http://mail.microsoftonline.com"

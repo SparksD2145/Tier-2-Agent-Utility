@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://amt.yahoo.com/att"

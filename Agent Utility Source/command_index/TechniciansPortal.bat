@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://uconnect.lno.att.com/checklist/uverse/invoice/report/index.cfm"

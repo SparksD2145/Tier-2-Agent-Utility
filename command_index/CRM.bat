@@ -1,0 +1,1 @@
+start "IE_FOR_INCOMPATIBLE_PROCESSES" "C:\Program Files\Internet Explorer\iexplore.exe" "https://crmp1a.web.att.com/smartclient/CRM/LaunchCrm.jnlp"

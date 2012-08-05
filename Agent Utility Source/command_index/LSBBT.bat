@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://lsbbt.sbc.com/"
