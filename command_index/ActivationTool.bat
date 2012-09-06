@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://uverseactivation.att.com/uverse-workflow-portal/?channel=uverse"

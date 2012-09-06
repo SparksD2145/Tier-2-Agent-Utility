@@ -1,0 +1,1 @@
+CALL %openbrowser% "https://spsf04.web.att.com/sites/UverseCC-SF/Tier 2 UCare Communications/"

@@ -1,1 +1,1 @@
-CALL %openbrowser% "https://lsreg.att.net"
+CALL %openbrowser% "http://att.net/uverse"

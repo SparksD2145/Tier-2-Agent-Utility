@@ -1,7 +1,7 @@
 @ECHO OFF
 SETLOCAL
-MODE CON: COLS=43 LINES=76
-TITLE Tier 2 Agent Utility [v2.3.0]
+MODE CON: COLS=43 LINES=79
+TITLE Tier 2 Agent Utility [v2.4.0dev]
 ::: -- DEVELOPER, ORIGINAL AUTHOR - NATHAN SMYTH --
 ::: -- DEVELOPER, MODULAR DEVELOPMENT AND REDEPLOY - THOMAS IBARRA --
 ::: DO NOT MODIFY THESE SYSTEM VARS :::
@@ -20,15 +20,10 @@ GOTO start
 :start
 CLS
 ECHO/
-ECHO  Hello, %USERNAME%!
+ECHO  --------- Tier 2 Agent Utility ----------
 ECHO/
-ECHO/ 
-ECHO  --------- Teir 2 Agent Utility ----------
-ECHO/
-ECHO   - Originally coded by Nathan Smyth
-ECHO   - Overhauled and refined by Thomas
-ECHO/
-ECHO  ----------- COMMAND LISTING -------------
+ECHO   - For all of your app launching needs -
+ECHO   - Built, developed and tested: TI530D -
 ECHO/
 CALL :list_cmds
 ECHO/
