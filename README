@@ -1,14 +1,5 @@
-------------------------
-- Teir 2 Agent Utility -
-------------------------
+Lead Developer: SparksD2145@GitHub
 
-DEVELOPER, MODULAR DEVELOPMENT AND REDEPLOY - THOMAS IBARRA
-DEVELOPER, ORIGINAL AUTHOR - NATHAN SMYTH
+A useful tool written for (PACE) Tier 2 Agents to assist in performing basic functions of Tier 2 representatives, primarily with a focus in accessing/launching necessary tools. Provides modular accessibility to add/remove your own commands, as well as drop-in extension support.
 
-A USEFUL TOOL WRITTEN FOR (PACE) TEIR 2 AGENTS
-TO ASSIST IN PERFORMING BASIC FUNCTIONS OF
-TEIR 2 REPRESENTATIVES, PRIMARILY WITH A FOCUS
-IN ACCESSING/LAUNCHING NECESSARY TOOLS.
-
-PENDING LICENSE, COPYWRITE
-DO NOT DISTRIBUTE WITHOUT WRITTEN CONSENT
+Currently use-at-your-own-risk software pending appoval.  Please do not redistribute this basic batch script, trying to limit availability.  Download your own copy and extensions to match, don't provide a copy to your neighbor. Thanks!
