@@ -1,1 +1,1 @@
-CALL %openbrowser% "http://cms.c01.sbcglobal.net"
+CALL %openbrowser% "https://cms.c01.sbcglobal.net/"

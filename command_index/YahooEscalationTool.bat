@@ -1,0 +1,1 @@
+CALL %openbrowser% "http://apps.sbcis.sbc.com/etools/yahoo/yahoo_escalation"

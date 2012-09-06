@@ -1,1 +1,0 @@
-CALL %openbrowser% "http://dataservicesbilling.sbc.com/CPE/Default.aspx"

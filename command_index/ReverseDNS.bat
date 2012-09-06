@@ -1,0 +1,1 @@
+CALL %openbrowser% "http://ipservices.sbcglobal.net/uverse_static_dns_request.html"

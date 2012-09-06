@@ -1,1 +1,1 @@
-CALL %openbrowser% "http://ebizweb.att.com/first/"
+start "IE_FOR_INCOMPATIBLE_PROCESSES" "C:\Program Files\Internet Explorer\iexplore.exe" "http://ebizweb.att.com/first/"

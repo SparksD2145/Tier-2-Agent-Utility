@@ -1,1 +1,1 @@
-CALL %openbrowser% "http://mail.microsoftonline.com"
+CALL %openbrowser% "http://mail.office365.com"
